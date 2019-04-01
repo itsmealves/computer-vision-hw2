@@ -46,6 +46,9 @@ function idx = KMeansClustering(X, k, visualize2D, centers)
         %                                                                     %
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
+        random_rows = randn(m, k, 1);
+        centers = X(random_rows, :);
+
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %                                                                     %
         %                            END YOUR CODE                            %
@@ -77,6 +80,19 @@ function idx = KMeansClustering(X, k, visualize2D, centers)
         %                                                                     %
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
+        for sample_index = 1:m
+            sample = X(sample_index, :);
+            distances = zeros(k, 1);
+
+            for t = 1:k
+                center = centers(t,:);
+                distances(t) = sqrt(sum((sample - center) .^ 2));
+            end
+
+            [minval, index] = min(distances);
+            idx(sample_index) = index;
+        end
+
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %                                                                     %
         %                            END YOUR CODE                            %
@@ -95,6 +111,13 @@ function idx = KMeansClustering(X, k, visualize2D, centers)
         %                                                                     %
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
+        for t = 1:k
+            sample_indexes = find(idx == t);
+            num_samples = size(sample_indexes, 1);
+
+            centers(t, :) = sum(X(sample_indexes,:)) / num_samples;
+        end
+
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         %                                                                     %
         %                            END YOUR CODE                            %
@@ -113,4 +136,6 @@ function idx = KMeansClustering(X, k, visualize2D, centers)
             break;
         end
     end
+
+    randi(5, 5, 5)
 end
