@@ -46,7 +46,7 @@ function idx = KMeansClustering(X, k, visualize2D, centers)
         %                                                                     %
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         
-        random_rows = randn(m, k, 1);
+        random_rows = randperm(m, k);
         centers = X(random_rows, :);
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
