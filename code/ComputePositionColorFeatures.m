@@ -20,4 +20,9 @@ function features = ComputePositionColorFeatures(img)
     %                              YOUR CODE HERE                             %
     %                                                                         %
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    [x y] = meshgrid(1:width, 1:height)
+    features(:,:,1:3) = ComputeColorFeatures(img);
+    features(:,:,4) = x;
+    features(:,:,5) = y;
 end
