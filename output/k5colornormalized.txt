@@ -1,0 +1,170 @@
+ans =
+
+     3     5     4     5     5
+     4     3     1     4     3
+     5     4     1     4     1
+     1     5     4     3     4
+     2     5     3     2     3
+
+Accuracy for imgs/black-white-kittens2.jpg is 0.9009
+
+ans =
+
+     2     2     4     3     4
+     2     5     1     2     3
+     4     3     5     4     3
+     1     4     5     2     1
+     2     4     1     3     3
+
+Accuracy for imgs/black_kitten.jpg is 0.9603
+
+ans =
+
+     5     3     1     1     5
+     4     5     4     4     4
+     5     4     3     2     3
+     1     3     1     5     4
+     2     2     3     1     4
+
+Accuracy for imgs/black_kitten_star.jpg is 0.9908
+
+ans =
+
+     5     5     2     1     2
+     1     1     3     1     5
+     3     5     4     4     3
+     4     3     5     4     5
+     4     4     3     4     1
+
+Accuracy for imgs/cat-jumping-running-grass.jpg is 0.9521
+
+ans =
+
+     1     2     2     3     4
+     5     5     4     2     2
+     4     5     4     4     4
+     2     3     3     5     1
+     2     3     3     5     1
+
+Accuracy for imgs/cat_bed.jpg is 0.9417
+
+ans =
+
+     4     3     5     1     3
+     5     2     2     2     4
+     3     5     2     5     1
+     4     1     1     3     3
+     5     2     5     4     1
+
+Accuracy for imgs/cat_grumpy.jpg is 0.8547
+
+ans =
+
+     5     3     1     2     4
+     1     1     1     1     3
+     1     4     4     5     2
+     1     4     1     4     4
+     4     1     2     4     1
+
+Accuracy for imgs/cat_march.jpg is 0.9695
+
+ans =
+
+     3     3     3     2     3
+     4     2     5     2     2
+     2     4     2     5     4
+     4     5     3     1     4
+     3     4     5     2     3
+
+Accuracy for imgs/cat_mouse.jpg is 0.6592
+
+ans =
+
+     3     4     1     4     1
+     5     5     2     1     3
+     5     3     2     3     2
+     3     5     3     2     1
+     2     1     2     2     1
+
+Accuracy for imgs/cutest-cat-ever-snoopy-sleeping.jpg is 0.8950
+
+ans =
+
+     1     3     2     3     1
+     5     3     3     1     3
+     5     1     5     2     2
+     5     3     3     5     4
+     1     4     4     2     3
+
+Accuracy for imgs/grey-american-shorthair.jpg is 0.9817
+
+ans =
+
+     4     4     4     1     4
+     1     4     2     1     3
+     5     5     5     5     2
+     3     2     2     1     5
+     3     1     5     4     2
+
+Accuracy for imgs/grey-cat-grass.jpg is 0.9345
+
+ans =
+
+     2     5     4     3     2
+     2     1     2     5     5
+     3     3     4     3     3
+     4     1     3     2     2
+     1     4     5     3     3
+
+Accuracy for imgs/kitten16.jpg is 0.8586
+
+ans =
+
+     2     4     5     1     3
+     2     1     1     4     1
+     2     5     4     4     4
+     3     4     3     3     3
+     3     1     1     1     2
+
+Accuracy for imgs/kitten9.jpg is 0.8251
+
+ans =
+
+     4     4     4     5     1
+     4     5     2     5     2
+     4     4     3     5     1
+     3     3     5     1     3
+     3     2     5     1     2
+
+Accuracy for imgs/stripey-kitty.jpg is 0.8089
+
+ans =
+
+     2     4     1     3     3
+     1     4     2     3     3
+     3     3     3     4     3
+     5     3     3     3     2
+     2     5     5     5     1
+
+Accuracy for imgs/the-black-white-kittens.jpg is 0.7269
+
+ans =
+
+     5     4     2     3     5
+     5     5     3     2     1
+     1     3     4     3     1
+     2     1     4     1     5
+     5     4     3     4     2
+
+Accuracy for imgs/tortoiseshell_shell_cat.jpg is 0.8037
+
+ans =
+
+     2     3     5     5     5
+     3     1     1     1     4
+     3     4     5     3     4
+     4     2     1     5     4
+     4     4     5     2     1
+
+Accuracy for imgs/young-calico-cat.jpg is 0.5991
+The mean accuracy for all images is 0.8625

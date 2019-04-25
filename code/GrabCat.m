@@ -1,18 +1,18 @@
 % Read the input images. 
-img = imread('../imgs/cat_mouse.jpg');
+img = imread('../imgs/grey-american-shorthair.jpg');
 background = imread('../imgs/backgrounds/beach.jpg');
 
 % Choose the number of clusters and the clustering method.
-k = 5;
+k = 2;
 clusteringMethod = 'kmeans';
 
 % Choose the feature function that will be used. The @ syntax creates a
 % function handle; this allows us to pass a function as an argument to
 % another function.
-featureFn = @ComputeColorFeatures;
+featureFn = @ComputeColorCentralityFeatures;
 
 % Whether or not to normalize features before clustering.
-normalizeFeatures = true;
+normalizeFeatures = false;
 
 % Whether or not to resize the image before clustering. If this script
 % runs too slowly then you should set resize to a value less than 1.

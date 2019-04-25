@@ -1,4 +1,4 @@
-function features = ComputeFullFeatures(img)
+function features = ComputeColorCentralityEdgeFeatures(img)
 % Compute a feature vector of colors and positions for all pixels in the
 % image. For each pixel in the image we compute a feature vector
 % (r, g, b, x, y) where (r, g, b) is the color of the pixel and (x, y) is
@@ -14,13 +14,14 @@ function features = ComputeFullFeatures(img)
 
     height = size(img, 1);
     width = size(img, 2);
-    features = zeros(height, width, 6);
+    features = zeros(height, width, 5);
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %                                                                         %
     %                              YOUR CODE HERE                             %
     %                                                                         %
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    features(:,:,1:5) = ComputePositionColorFeatures(img);
-    features(:,:,6) = ComputeFeatures(img);
+    features(:,:,1:3) = ComputeColorFeatures(img);
+    features(:,:,4) = ComputeCentralityFeatures(img);
+    features(:,:,5) = ComputeFeatures(img);
 end
